@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D118B40A7FAB2EFE1B0AAA8 /* Pods_RockScissorPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EAE2640EFB5FE5585168AA /* Pods_RockScissorPaper.framework */; };
+		36DB1F8854609B51E5782D2F /* Pods_RockScissorPaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4633BF0FFE8E51B3BE25A2 /* Pods_RockScissorPaperTests.framework */; };
 		702E9E0427539144008CA43B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9E0327539144008CA43B /* AppDelegate.swift */; };
 		702E9E0627539144008CA43B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9E0527539144008CA43B /* SceneDelegate.swift */; };
-		702E9E0827539144008CA43B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9E0727539144008CA43B /* ViewController.swift */; };
 		702E9E0B27539144008CA43B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E0927539144008CA43B /* Main.storyboard */; };
 		702E9E0D27539145008CA43B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E0C27539145008CA43B /* Assets.xcassets */; };
 		702E9E1027539145008CA43B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E0E27539145008CA43B /* LaunchScreen.storyboard */; };
 		702E9E1B27539146008CA43B /* RockScissorPaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9E1A27539146008CA43B /* RockScissorPaperTests.swift */; };
 		702E9E2627539146008CA43B /* RockScissorPaperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9E2527539146008CA43B /* RockScissorPaperUITests.swift */; };
+		702E9E3527539176008CA43B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9E3427539176008CA43B /* RootViewController.swift */; };
+		702E9E38275391D8008CA43B /* rock.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E37275391D8008CA43B /* rock.jpeg */; };
+		702E9E3B275391E4008CA43B /* scissor.png in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E39275391E4008CA43B /* scissor.png */; };
+		702E9E3C275391E4008CA43B /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E3A275391E4008CA43B /* paper.png */; };
+		702E9E3E27539BD0008CA43B /* 70289-baby.json in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E3D27539BD0008CA43B /* 70289-baby.json */; };
+		702E9E412753A9AA008CA43B /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9E402753A9AA008CA43B /* Hand.swift */; };
+		9C6701C89F5BD0EEF8655A0E /* Pods_RockScissorPaper_RockScissorPaperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CE88416DAB029767999346 /* Pods_RockScissorPaper_RockScissorPaperUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BFF5771871499088CF639E0 /* Pods-RockScissorPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockScissorPaper.release.xcconfig"; path = "Target Support Files/Pods-RockScissorPaper/Pods-RockScissorPaper.release.xcconfig"; sourceTree = "<group>"; };
+		15DE56AA51F060CCA761FCE1 /* Pods-RockScissorPaper-RockScissorPaperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockScissorPaper-RockScissorPaperUITests.release.xcconfig"; path = "Target Support Files/Pods-RockScissorPaper-RockScissorPaperUITests/Pods-RockScissorPaper-RockScissorPaperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4FD97EAE697C592A7B0DF6BF /* Pods-RockScissorPaperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockScissorPaperTests.debug.xcconfig"; path = "Target Support Files/Pods-RockScissorPaperTests/Pods-RockScissorPaperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		702E9E0027539144008CA43B /* RockScissorPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockScissorPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		702E9E0327539144008CA43B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		702E9E0527539144008CA43B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		702E9E0727539144008CA43B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		702E9E0A27539144008CA43B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		702E9E0C27539145008CA43B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		702E9E0F27539145008CA43B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,18 @@
 		702E9E2127539146008CA43B /* RockScissorPaperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockScissorPaperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		702E9E2527539146008CA43B /* RockScissorPaperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockScissorPaperUITests.swift; sourceTree = "<group>"; };
 		702E9E2727539146008CA43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702E9E3427539176008CA43B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		702E9E37275391D8008CA43B /* rock.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rock.jpeg; sourceTree = "<group>"; };
+		702E9E39275391E4008CA43B /* scissor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissor.png; sourceTree = "<group>"; };
+		702E9E3A275391E4008CA43B /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		702E9E3D27539BD0008CA43B /* 70289-baby.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "70289-baby.json"; sourceTree = "<group>"; };
+		702E9E402753A9AA008CA43B /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		76CE88416DAB029767999346 /* Pods_RockScissorPaper_RockScissorPaperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockScissorPaper_RockScissorPaperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4633BF0FFE8E51B3BE25A2 /* Pods_RockScissorPaperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockScissorPaperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E68D7C3FD1F6AA08913B25 /* Pods-RockScissorPaper-RockScissorPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockScissorPaper-RockScissorPaperUITests.debug.xcconfig"; path = "Target Support Files/Pods-RockScissorPaper-RockScissorPaperUITests/Pods-RockScissorPaper-RockScissorPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92460EDAA66A69D7431C16CE /* Pods-RockScissorPaperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockScissorPaperTests.release.xcconfig"; path = "Target Support Files/Pods-RockScissorPaperTests/Pods-RockScissorPaperTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1EAE2640EFB5FE5585168AA /* Pods_RockScissorPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockScissorPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F917594E3C35704EB81C38B7 /* Pods-RockScissorPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockScissorPaper.debug.xcconfig"; path = "Target Support Files/Pods-RockScissorPaper/Pods-RockScissorPaper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D118B40A7FAB2EFE1B0AAA8 /* Pods_RockScissorPaper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36DB1F8854609B51E5782D2F /* Pods_RockScissorPaperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +94,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6701C89F5BD0EEF8655A0E /* Pods_RockScissorPaper_RockScissorPaperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08C925BAC31426622BC0A855 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F917594E3C35704EB81C38B7 /* Pods-RockScissorPaper.debug.xcconfig */,
+				0BFF5771871499088CF639E0 /* Pods-RockScissorPaper.release.xcconfig */,
+				84E68D7C3FD1F6AA08913B25 /* Pods-RockScissorPaper-RockScissorPaperUITests.debug.xcconfig */,
+				15DE56AA51F060CCA761FCE1 /* Pods-RockScissorPaper-RockScissorPaperUITests.release.xcconfig */,
+				4FD97EAE697C592A7B0DF6BF /* Pods-RockScissorPaperTests.debug.xcconfig */,
+				92460EDAA66A69D7431C16CE /* Pods-RockScissorPaperTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		702E9DF727539144008CA43B = {
 			isa = PBXGroup;
 			children = (
+				702E9E3F2753A975008CA43B /* Utility */,
+				702E9E36275391C6008CA43B /* Images */,
+				702E9E332753916C008CA43B /* Controllers */,
 				702E9E0227539144008CA43B /* RockScissorPaper */,
 				702E9E1927539146008CA43B /* RockScissorPaperTests */,
 				702E9E2427539146008CA43B /* RockScissorPaperUITests */,
 				702E9E0127539144008CA43B /* Products */,
+				08C925BAC31426622BC0A855 /* Pods */,
+				88A91CB2C04AC92FBDA30CF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +144,6 @@
 			children = (
 				702E9E0327539144008CA43B /* AppDelegate.swift */,
 				702E9E0527539144008CA43B /* SceneDelegate.swift */,
-				702E9E0727539144008CA43B /* ViewController.swift */,
 				702E9E0927539144008CA43B /* Main.storyboard */,
 				702E9E0C27539145008CA43B /* Assets.xcassets */,
 				702E9E0E27539145008CA43B /* LaunchScreen.storyboard */,
@@ -128,6 +170,43 @@
 			path = RockScissorPaperUITests;
 			sourceTree = "<group>";
 		};
+		702E9E332753916C008CA43B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				702E9E3427539176008CA43B /* RootViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		702E9E36275391C6008CA43B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				702E9E3D27539BD0008CA43B /* 70289-baby.json */,
+				702E9E3A275391E4008CA43B /* paper.png */,
+				702E9E39275391E4008CA43B /* scissor.png */,
+				702E9E37275391D8008CA43B /* rock.jpeg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		702E9E3F2753A975008CA43B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				702E9E402753A9AA008CA43B /* Hand.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		88A91CB2C04AC92FBDA30CF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1EAE2640EFB5FE5585168AA /* Pods_RockScissorPaper.framework */,
+				76CE88416DAB029767999346 /* Pods_RockScissorPaper_RockScissorPaperUITests.framework */,
+				7C4633BF0FFE8E51B3BE25A2 /* Pods_RockScissorPaperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 702E9E2A27539146008CA43B /* Build configuration list for PBXNativeTarget "RockScissorPaper" */;
 			buildPhases = (
+				69D858EE2720C55A6F08CE10 /* [CP] Check Pods Manifest.lock */,
 				702E9DFC27539144008CA43B /* Sources */,
 				702E9DFD27539144008CA43B /* Frameworks */,
 				702E9DFE27539144008CA43B /* Resources */,
+				391E4A4449262C6120E2B725 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 702E9E2D27539146008CA43B /* Build configuration list for PBXNativeTarget "RockScissorPaperTests" */;
 			buildPhases = (
+				F819F6E0C35C3596534A5A35 /* [CP] Check Pods Manifest.lock */,
 				702E9E1227539146008CA43B /* Sources */,
 				702E9E1327539146008CA43B /* Frameworks */,
 				702E9E1427539146008CA43B /* Resources */,
@@ -170,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 702E9E3027539146008CA43B /* Build configuration list for PBXNativeTarget "RockScissorPaperUITests" */;
 			buildPhases = (
+				C1E89CD92B73FEB86FDF1AA3 /* [CP] Check Pods Manifest.lock */,
 				702E9E1D27539146008CA43B /* Sources */,
 				702E9E1E27539146008CA43B /* Frameworks */,
 				702E9E1F27539146008CA43B /* Resources */,
+				9CF0A4860A4BB8A90D19F255 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,7 +315,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702E9E38275391D8008CA43B /* rock.jpeg in Resources */,
+				702E9E3E27539BD0008CA43B /* 70289-baby.json in Resources */,
 				702E9E1027539145008CA43B /* LaunchScreen.storyboard in Resources */,
+				702E9E3C275391E4008CA43B /* paper.png in Resources */,
+				702E9E3B275391E4008CA43B /* scissor.png in Resources */,
 				702E9E0D27539145008CA43B /* Assets.xcassets in Resources */,
 				702E9E0B27539144008CA43B /* Main.storyboard in Resources */,
 			);
@@ -253,14 +341,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		391E4A4449262C6120E2B725 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RockScissorPaper/Pods-RockScissorPaper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RockScissorPaper/Pods-RockScissorPaper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RockScissorPaper/Pods-RockScissorPaper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69D858EE2720C55A6F08CE10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RockScissorPaper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CF0A4860A4BB8A90D19F255 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RockScissorPaper-RockScissorPaperUITests/Pods-RockScissorPaper-RockScissorPaperUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RockScissorPaper-RockScissorPaperUITests/Pods-RockScissorPaper-RockScissorPaperUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RockScissorPaper-RockScissorPaperUITests/Pods-RockScissorPaper-RockScissorPaperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E89CD92B73FEB86FDF1AA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RockScissorPaper-RockScissorPaperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F819F6E0C35C3596534A5A35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RockScissorPaperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		702E9DFC27539144008CA43B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				702E9E0827539144008CA43B /* ViewController.swift in Sources */,
+				702E9E412753A9AA008CA43B /* Hand.swift in Sources */,
 				702E9E0427539144008CA43B /* AppDelegate.swift in Sources */,
 				702E9E0627539144008CA43B /* SceneDelegate.swift in Sources */,
+				702E9E3527539176008CA43B /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +625,7 @@
 		};
 		702E9E2B27539146008CA43B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F917594E3C35704EB81C38B7 /* Pods-RockScissorPaper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +644,7 @@
 		};
 		702E9E2C27539146008CA43B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFF5771871499088CF639E0 /* Pods-RockScissorPaper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +663,7 @@
 		};
 		702E9E2E27539146008CA43B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FD97EAE697C592A7B0DF6BF /* Pods-RockScissorPaperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +685,7 @@
 		};
 		702E9E2F27539146008CA43B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92460EDAA66A69D7431C16CE /* Pods-RockScissorPaperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +707,7 @@
 		};
 		702E9E3127539146008CA43B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E68D7C3FD1F6AA08913B25 /* Pods-RockScissorPaper-RockScissorPaperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +727,7 @@
 		};
 		702E9E3227539146008CA43B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DE56AA51F060CCA761FCE1 /* Pods-RockScissorPaper-RockScissorPaperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
