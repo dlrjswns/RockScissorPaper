@@ -11,6 +11,15 @@ import Lottie
 class RootViewController:UIViewController{
     let image = ["rock.jpeg", "scissor.png", "paper.png"]
     
+    private lazy var statusLabel:UILabel={
+        //승리, 실패, 비김 상태표시용 라벨
+        let label = UILabel()
+        label.text = "날 클릭해봐 !!"
+        label.font = UIFont(name: "GillSans-UltraBold", size: 30)
+       
+        return label
+    }()
+    
     private lazy var animationView:AnimationView={
         let av = AnimationView(name: "70289-baby")
         av.contentMode = .scaleAspectFit
@@ -18,18 +27,24 @@ class RootViewController:UIViewController{
         av.play()
         av.backgroundColor = .systemPink
         av.layer.cornerRadius = 100
+        av.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        av.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(animationVWTapped))
+//        av.isUserInteractionEnabled = true
+//        av.addGestureRecognizer(tap)
         return av
     }()
     
     private lazy var computer:UIImageView={
        let imgView = UIImageView()
         imgView.backgroundColor = .systemOrange
+        imgView.contentMode = .scaleAspectFit
         imgView.addSubview(animationView)
         animationView.translatesAutoresizingMaskIntoConstraints = false
         animationView.centerXAnchor.constraint(equalTo: imgView.centerXAnchor).isActive = true
         animationView.centerYAnchor.constraint(equalTo: imgView.centerYAnchor).isActive = true
-        animationView.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        animationView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        
         return imgView
     }()
     
@@ -71,6 +86,10 @@ class RootViewController:UIViewController{
         }
     
     //MARK: -Objc
+    @objc func animationVWTapped(){
+        print("animationtapped()")
+    }
+    
     @objc func rockScissorPaperTapped(_ sender:UIButton){
        //UIButton의 tag번호를 whoWin()의 인자로 넘겨주어 승리했는지 실패했는지 반환받아 라벨에 띄어주자
         let tag = sender.tag
@@ -82,23 +101,34 @@ class RootViewController:UIViewController{
             myHand = Hand.Rock
             animationView.isHidden = true
             self.computer.image = UIImage(named: computer)
-            if isMyWin(myHand: myHand, computerHand: computerHand){
-                //내가 승리했다면 어떻게 할것인지
-                print("나의 승리")
+            if isMyWin(myHand: myHand, computerHand: computerHand) == .WIN{
+                statusLabel.text = "WINNER"
+            }else if isMyWin(myHand: myHand, computerHand: computerHand) == .LOSE{
+                statusLabel.text = "LOSER"
+            }else{
+                statusLabel.text = "DRAW"
             }
         case 1:
             myHand = Hand.Scissor
             animationView.isHidden = true
             self.computer.image = UIImage(named: computer)
-            if isMyWin(myHand: myHand, computerHand: computerHand){
-                print("나의 승리")
+            if isMyWin(myHand: myHand, computerHand: computerHand) == .WIN{
+                statusLabel.text = "WINNER"
+            }else if isMyWin(myHand: myHand, computerHand: computerHand) == .LOSE{
+                statusLabel.text = "LOSER"
+            }else{
+                statusLabel.text = "DRAW"
             }
         case 2:
             myHand = Hand.Paper
             animationView.isHidden = true
             self.computer.image = UIImage(named: computer)
-            if isMyWin(myHand: myHand, computerHand: computerHand){
-                print("나의 승리")
+            if isMyWin(myHand: myHand, computerHand: computerHand) == .WIN{
+                statusLabel.text = "WINNER"
+            }else if isMyWin(myHand: myHand, computerHand: computerHand) == .LOSE{
+                statusLabel.text = "LOSER"
+            }else{
+                statusLabel.text = "DRAW"
             }
         default:
             print("rockScissorPaperTapped() Error")
@@ -119,26 +149,33 @@ class RootViewController:UIViewController{
         }
     }
     
-    func isMyWin(myHand:Hand, computerHand:Hand)->Bool{
+    func isMyWin(myHand:Hand, computerHand:Hand)->Result{
         switch myHand {
         case .Rock:
             if computerHand == .Scissor {
-                return true
-            }else{
-                return false
+                return .WIN
+            }else if computerHand == .Rock{
+                return .DRAW
+            }else{ //컴퓨터가 가위일때
+                return .LOSE
             }
             
         case .Scissor:
             if computerHand == .Paper {
-                return true
-            }else{
-                return false
+                return .WIN
+            }else if computerHand == .Scissor{
+                return .DRAW
+            }else{ //컴퓨터가 주먹일때
+                return .LOSE
             }
+            
         case .Paper:
             if computerHand == .Rock {
-                return true
-            }else{
-                return false
+                return .WIN
+            }else if computerHand == .Paper{
+                return .DRAW
+            }else{ //컴퓨터가 보자기일때
+                return .LOSE
             }
         }
     }
@@ -165,5 +202,10 @@ class RootViewController:UIViewController{
         computer.translatesAutoresizingMaskIntoConstraints = false
         computer.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         computer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        view.addSubview(statusLabel)
+        statusLabel.translatesAutoresizingMaskIntoConstraints = false
+        statusLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        statusLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
     }
 }

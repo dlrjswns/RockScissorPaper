@@ -22,6 +22,8 @@
 		702E9E3C275391E4008CA43B /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E3A275391E4008CA43B /* paper.png */; };
 		702E9E3E27539BD0008CA43B /* 70289-baby.json in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E3D27539BD0008CA43B /* 70289-baby.json */; };
 		702E9E412753A9AA008CA43B /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9E402753A9AA008CA43B /* Hand.swift */; };
+		702E9E472755086D008CA43B /* GillSansUltraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 702E9E462755086D008CA43B /* GillSansUltraBold.ttf */; };
+		702E9E4927550BE8008CA43B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9E4827550BE8008CA43B /* Result.swift */; };
 		9C6701C89F5BD0EEF8655A0E /* Pods_RockScissorPaper_RockScissorPaperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CE88416DAB029767999346 /* Pods_RockScissorPaper_RockScissorPaperUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		702E9E3A275391E4008CA43B /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
 		702E9E3D27539BD0008CA43B /* 70289-baby.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "70289-baby.json"; sourceTree = "<group>"; };
 		702E9E402753A9AA008CA43B /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		702E9E462755086D008CA43B /* GillSansUltraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GillSansUltraBold.ttf; sourceTree = "<group>"; };
+		702E9E4827550BE8008CA43B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		76CE88416DAB029767999346 /* Pods_RockScissorPaper_RockScissorPaperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockScissorPaper_RockScissorPaperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4633BF0FFE8E51B3BE25A2 /* Pods_RockScissorPaperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RockScissorPaperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E68D7C3FD1F6AA08913B25 /* Pods-RockScissorPaper-RockScissorPaperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RockScissorPaper-RockScissorPaperUITests.debug.xcconfig"; path = "Target Support Files/Pods-RockScissorPaper-RockScissorPaperUITests/Pods-RockScissorPaper-RockScissorPaperUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 		702E9DF727539144008CA43B = {
 			isa = PBXGroup;
 			children = (
+				702E9E42275505A0008CA43B /* Font */,
 				702E9E3F2753A975008CA43B /* Utility */,
 				702E9E36275391C6008CA43B /* Images */,
 				702E9E332753916C008CA43B /* Controllers */,
@@ -193,8 +198,17 @@
 			isa = PBXGroup;
 			children = (
 				702E9E402753A9AA008CA43B /* Hand.swift */,
+				702E9E4827550BE8008CA43B /* Result.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		702E9E42275505A0008CA43B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				702E9E462755086D008CA43B /* GillSansUltraBold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		88A91CB2C04AC92FBDA30CF0 /* Frameworks */ = {
@@ -322,6 +336,7 @@
 				702E9E3B275391E4008CA43B /* scissor.png in Resources */,
 				702E9E0D27539145008CA43B /* Assets.xcassets in Resources */,
 				702E9E0B27539144008CA43B /* Main.storyboard in Resources */,
+				702E9E472755086D008CA43B /* GillSansUltraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				702E9E412753A9AA008CA43B /* Hand.swift in Sources */,
+				702E9E4927550BE8008CA43B /* Result.swift in Sources */,
 				702E9E0427539144008CA43B /* AppDelegate.swift in Sources */,
 				702E9E0627539144008CA43B /* SceneDelegate.swift in Sources */,
 				702E9E3527539176008CA43B /* RootViewController.swift in Sources */,
