@@ -101,9 +101,9 @@ class RootViewController:UIViewController{
             myHand = Hand.Rock
             animationView.isHidden = true
             self.computer.image = UIImage(named: computer)
-            if isMyWin(myHand: myHand, computerHand: computerHand) == .WIN{
+            if whatResult(myHand: myHand, computerHand: computerHand) == .WIN{
                 statusLabel.text = "WINNER"
-            }else if isMyWin(myHand: myHand, computerHand: computerHand) == .LOSE{
+            }else if whatResult(myHand: myHand, computerHand: computerHand) == .LOSE{
                 statusLabel.text = "LOSER"
             }else{
                 statusLabel.text = "DRAW"
@@ -112,9 +112,9 @@ class RootViewController:UIViewController{
             myHand = Hand.Scissor
             animationView.isHidden = true
             self.computer.image = UIImage(named: computer)
-            if isMyWin(myHand: myHand, computerHand: computerHand) == .WIN{
+            if whatResult(myHand: myHand, computerHand: computerHand) == .WIN{
                 statusLabel.text = "WINNER"
-            }else if isMyWin(myHand: myHand, computerHand: computerHand) == .LOSE{
+            }else if whatResult(myHand: myHand, computerHand: computerHand) == .LOSE{
                 statusLabel.text = "LOSER"
             }else{
                 statusLabel.text = "DRAW"
@@ -123,9 +123,9 @@ class RootViewController:UIViewController{
             myHand = Hand.Paper
             animationView.isHidden = true
             self.computer.image = UIImage(named: computer)
-            if isMyWin(myHand: myHand, computerHand: computerHand) == .WIN{
+            if whatResult(myHand: myHand, computerHand: computerHand) == .WIN{
                 statusLabel.text = "WINNER"
-            }else if isMyWin(myHand: myHand, computerHand: computerHand) == .LOSE{
+            }else if whatResult(myHand: myHand, computerHand: computerHand) == .LOSE{
                 statusLabel.text = "LOSER"
             }else{
                 statusLabel.text = "DRAW"
@@ -149,7 +149,7 @@ class RootViewController:UIViewController{
         }
     }
     
-    func isMyWin(myHand:Hand, computerHand:Hand)->Result{
+    func whatResult(myHand:Hand, computerHand:Hand)->Result{ //결과를 반환하기위한 함수
         switch myHand {
         case .Rock:
             if computerHand == .Scissor {
